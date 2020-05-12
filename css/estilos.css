@@ -1,40 +1,110 @@
+/* soft reset do css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    background-image: url('images/background-image.jpg');
-    background-size: auto 100vh;
+    background-image: url('./img/background-image.jpg');
+    background-size: auto 100%;
     font-family: Arial;
+    font-size: 14px;
     height: 100vh;
   }
-  
-  .menu {
-    background-color: #191970;
+
+  /* se a tela tiver pelo menos 400 px, vai carregar esses estilos */
+@media (min-width: 400px) {
+  body {
+    font-size: 16px;
   }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
+}
+
+/* se a tela tiver de 400px a 600 px, vai carregar esses estilos */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
   }
-  
-  .menu li {
-    list-style: none;
-  }
-  
-  a {
-    color: #7777FF;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .site-subtitle, 
-  .site-title {
-    color: #7777FF;
-    text-align: center;
-    font-size: 50px;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-    font-size: 25px;
-  }
+}
+
+header {
+  align-items: center;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+}
+
+.menu {
+  background-color: #00264d;
+  color: #ff2d5f;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
+a {
+  color: #7777FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle, 
+.site-title {
+  color: #7777FF;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 4em;
+}
+
+.site-subtitle {
+  font-style: italic;
+  font-size: 25px;
+}
+
+.img-portfolio {
+  height: 50px;
+  width: 50px;
+}
+
+footer {
+  align-items: flex-start;
+  display: flex;
+  height: 50vh;
+  justify-content: start;
+  padding-left: 7px;
+  padding-top: 45px;
+}
+
+.logo-linkedin {
+  color: #ff2d5f;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 35px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  text-align: -webkit-center;
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+}
