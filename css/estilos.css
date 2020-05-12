@@ -1,0 +1,40 @@
+body {
+    background-image: url('images/background-image.jpg');
+    background-size: auto 100vh;
+    font-family: Arial;
+    height: 100vh;
+  }
+  
+  .menu {
+    background-color: #191970;
+  }
+  
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li {
+    list-style: none;
+  }
+  
+  a {
+    color: #7777FF;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .site-subtitle, 
+  .site-title {
+    color: #7777FF;
+    text-align: center;
+    font-size: 50px;
+  }
+  
+  .site-subtitle {
+    font-style: italic;
+    font-size: 25px;
+  }
